@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;900&family=Manrope:wght@800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    
+}
+body {
+    background: hsl(218, 23%, 16%);
+}
+#container {
+    padding: 0 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+ /* ADVICE CONTAINER */
+#advice-container {
+    background: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem;
+    margin: 3rem;
+}
+ /* ADVICE TITLE SECTION */
+#advice-title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: hsl(150, 100%, 66%);
+}
+/* ADVICE QUOTE SECTION */
+#advice-quote__container {
+    margin: 1rem;
+}
+#main-quote {
+    font-size: 1.5rem;
+    color: hsl(193, 38%, 86%);
+    min-width: 80%;
+    min-height: 100%;
+}
+/* DICE SECTION */
+#dice-section {
+    position: relative;
+    top: 2.9rem;
+}
+#dice-background {
+    background: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+#dice-background::before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    padding: 0.7rem;
+    z-index: 25;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background: hsl(150, 100%, 66%);
+}
+#dice-background:hover::before{
+    opacity: 0.3;
+    filter: blur(10px);
+    transition: opacity ease 1200ms;
+}
+#advice-btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+/* TWEET ADVICE SECTION */
+#create-tweet__container {
+    background:hsl(217, 19%, 24%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 2rem 1rem;
+}
+#cta-tweet {
+    font-size: 1rem;
+    color: hsl(193, 38%, 86%);
+}
+#create-tweet__btn {
+    color: #00ACEE;
+    font-size: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+@media (min-width: 600px) {
+    #advice-container {
+        max-width: 27rem;
+    }
+}
+@media (min-width: 1440px) {
+    #advice-title {
+        font-size: 1.4rem;
+    }
+    #main-quote {
+        font-size: 1.7rem;
+    }
+    #dice-background {
+        padding: 1.3rem
+    }
+    
+}

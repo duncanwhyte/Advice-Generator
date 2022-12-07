@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;900&family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <script src="./scripts/advice.js" defer></script>
+  <script src="https://kit.fontawesome.com/8a9982735a.js" crossorigin="anonymous"></script>
+  <script src="./scripts/tweet.js" defer></script>
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+  <div id="container">
+    <main>
+      <div id="advice-container">
+        <section id="advice-title__container">
+          <h1 id="advice-title">Advice #<span id="advice-id"></span></h1>
+        </section>
+        <section id="advice-quote__container">
+          <p id="main-quote">""</p>
+        </section>
+        <section id="divider-container">
+          <img src="./images/pattern-divider-mobile.svg" alt="divider-img">
+        </section>
+        <section id="dice-section">
+          <div id="dice-background">
+            <img id="advice-btn" src="./images/icon-dice.svg" alt="dice-icon__img">
+          </div>
+        </section>
+      </div>
+      <section id="tweet-advice__section">
+        <div id="create-tweet__container">
+          <h3 id="cta-tweet">Like the advice. Why don't you tweet it ?</h3>
+          <i id="create-tweet__btn" class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
